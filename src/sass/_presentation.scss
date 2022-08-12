@@ -2,14 +2,6 @@
     border: 1px solid #000;
 }
 
-.carousel--bg{
-    background: rgb(0, 0, 0);
-}
-
-.carousel__item--bg{
-    background: #000;
-}
-
 .tech-stack-section__title{
     display: flex;
     justify-content: center;
@@ -31,6 +23,7 @@
 .tech-stack-section{    
     padding: 35px 50px;
     background-color: rgba(255, 255, 255, 0.427);
+    border-radius: 30px;
 }
 
 .tech-list{

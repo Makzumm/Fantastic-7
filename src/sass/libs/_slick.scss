@@ -1,9 +1,22 @@
 @import '../../../node_modules/slick-carousel/slick/slick.scss';
 
+.slick-arrow{
+    background-color: transparent;
+    border: 2px solid rgb(73, 154, 240);
+    cursor: pointer;
+    font-weight: 700;
+}
+
 .slick-prev {
-    display: none;
+    position: relative;
+    z-index: 3;
+    top: 10px;
+    left: 10px;
 }
 
 .slick-next{
-    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
 }

@@ -340,8 +340,6 @@
 
 // features
 
-// features
-
 .features__container {
   padding: 0 15px 0 15px;
 
@@ -402,6 +400,48 @@
   padding-left: 20px;
 
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.427);
+
   border-radius: 10%;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-right: -15px;
+  margin-bottom: -15px;
+}
+
+.sub-item {
+  flex-basis: calc(100% / 4 - 15px);
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.427);
+  display: flex;
+  align-items: center;
+
+  border-radius: 30%;
+
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+  filter: drop-shadow(2px 8px 8px rgba(86, 35, 255, 0.816));
+  animation: moon 5s infinite;
+}
+
+@keyframes moon {
+  0% {
+    filter: drop-shadow(2px 8px 10px rgba(46, 182, 192, 0.816));
+    transform: perspective(650px);
+  }
+
+  50% {
+    transform: perspective(650px);
+    filter: drop-shadow(2px 8px 10px rgba(128, 69, 255, 0.816));
+  }
+
+  100% {
+    transform: perspective(650px);
+    filter: drop-shadow(2px 8px 10px rgba(46, 182, 192, 0.816));
+  }
 }

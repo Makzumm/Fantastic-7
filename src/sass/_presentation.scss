@@ -347,6 +347,7 @@
 }
 
 .title {
+  font-family: 'Neucha', cursive;
   text-align: center;
   margin-bottom: 15px;
   text-decoration: underline;
@@ -384,14 +385,18 @@
 }
 
 .sub-title {
+  font-family: 'Neucha', cursive;
   text-align: center;
   margin-top: 15px;
   font-size: 26px;
   text-decoration: underline;
 }
+.sub-title--second {
+  margin-top: 0;
+}
 
 .sub-list {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Neucha', cursive;
   font-style: normal;
   font-weight: 300;
   font-size: 19px;
@@ -403,7 +408,7 @@
 
   border-radius: 10%;
   display: flex;
-  // align-items: center;
+
   justify-content: center;
   flex-wrap: wrap;
 
@@ -415,7 +420,7 @@
   flex-basis: calc(100% / 4 - 15px);
   margin-right: 15px;
   margin-bottom: 15px;
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(255, 255, 255, 0.427);
   display: flex;
   align-items: center;

@@ -271,14 +271,23 @@
 }
 
 //VLAD
-.clients__description > li:not(:first-child) {
+.clients__description > li:not(:last-child) {
   padding-left: 2rem;
+  font-size: 18px;
+  font-family: Ruda, sans-serif;
   background-position: 0 0;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../images/uoks_l25o_210929.jpg');
 }
 
+.clients__description-hidden {
+  font-style: italic;
+  display: none;
+}
+.clients__description:hover .clients__description-hidden {
+  display: inline-block;
+}
 .section__clients {
   background-image: url('../images/kids_eating_ice_cream_hero.webp');
   background-size: cover;
@@ -327,6 +336,7 @@
 }
 
 .clients__description {
+  cursor: pointer;
   padding: 20px;
   border-radius: 25px;
   width: 100%;
